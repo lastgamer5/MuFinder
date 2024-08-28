@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuFinder Home</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 90 110' width='90' height='110'><rect x='0' y='0' width='90' height='110' rx='10' ry='10' fill='rgb(255, 115, 0)' stroke='rgb(255, 196, 0)' stroke-width='5'/><circle cx='45' cy='30' r='8.75' fill='none' stroke='rgb(187, 255, 0)' stroke-width='4'/><circle cx='45' cy='75' r='17.5' fill='none' stroke='rgb(187, 255, 0)' stroke-width='4'/></svg>"
+    type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .tab {
+  background-color: #597B97;
+  font: 14px monospace;
+  padding: 3px 10px;
+  display: inline-block;
+  color: var(--NAVBAR-TEXT-COLOR);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.tab:nth-child(1) {
+  background-color: #46657E;
+  text-decoration: none;
+}
+.tab:nth-child(1):hover {
+  background-color: rgb(66, 91, 112);
+  text-decoration: underline;
+}
+.tab:nth-child(2):hover {
+  background-color: #597B97;
+  text-decoration: none;
+  user-select: none;
+}
+textarea {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px;
+  height: 100px;
+  border-radius: 5px;
+  resize: vertical;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <p class="header-text">MuFinder</p>
+    <details class="drop-container">
+      <summary>
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="none" stroke="white" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down" viewBox="0 0 24 24">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </summary>
+      <ol class="bar-items-drop">
+        <li><a href="#who-we-are" class="item-drop">Who we are</a></li>
+        <hr>
+        <li><a href="#how-it-works" class="item-drop">How it works</a></li>
+        <hr>
+        <li><a href="#group-members" class="item-drop">Group members</a></li>
+      </ol>
+    </details>
+    <ol class="bar-items">
+      <div aria-label="none"></div>
+      <li><a href="#who-we-are" class="item">Who we are</a></li>
+      <div aria-label="none"></div>
+      <li><a href="#how-it-works" class="item">How it works</a></li>
+      <div aria-label="none"></div>
+      <li><a href="#group-members" class="item">Group members</a></li>
+      <div aria-label="none"></div>
+    </ol>
+  </nav>
+  <div class="content-container">
+    <div class="content">
+      <header>
+        <h1 class="header-title">Find any song with a clip of audio!</h1>
+        <hr class="title-split">
+      </header>
+      <main>
+        <section>
+          <div class="con2">
+            <a href="index.html" class="tab">Upload by audio file</a>
+            <div class="tab">Type lyrics to audio</div>
+            </a>
+            <div class="file-container">
+              <form id="audioForm" method="post">
+                <div class="filec">
+                  <label for="textarea">Type or paste in lyrics:</label>
+                  <textarea id="textarea" autofocus placeholder="Your song goes here"></textarea>
+                </div>
+                <div class="filec output">
+                  <p>Output:</p>
+                </div>
+                <button type="submit" class="submit-button">Submit Audio</button>
+                <div id="error-message" class="message"></div>
+                <div id="success-message" class="message"></div>
+              </form>
+            </div>
+
+          </div>
+        </section>
+        <section id="who-we-are">
+          <article>
+            <h2>Who we are</h2>
+            <hr class="title-split2">
+            <div class="wrapper">
+              <p>We are Campbell Highschool students participating in a music technology innovation project. This project
+                requires for us students to think outside the box and come up with something new and creative.
+                For our project, we decided to make a theoretical website that takes your audio file and outputs the exact song
+                that audio is from. This is a simple website meant to help people find the song stuck in their heads. However,
+                if you can't get the audio you can click on the "Type lyrics to audio" tab in order to type in lyrics instead of
+                a file. I made this by using 3 programming languages used to make common day websites. These languages include
+                HTML, CSS, and Javascript. Each has a specific function to making this site viewable and usable.</p>
+              <figure>
+                <img src="Photos/Spartans.jpg" alt="Campbell Highschool Logo" width="200" height="200">
+              </figure>
+            </div>
+          </article>
+        </section>
+
+        <section id="how-it-works">
+          <article>
+            <h2>How it works</h2>
+            <hr class="title-split2">
+            <div class="wrapper">
+              <figure class="figure2">
+                <img src="Photos/Chatgpt.jpg" alt="A person using chatgpt on their smartphone" width="300" height="150"
+                  class="objectfit">
+              </figure>
+              <p>This website works by using Chatgpt's AI language model in order to detect and find the song you've been
+                looking for.
+                After only one year of testing, experimenting, and talking with professional software developers and data
+                analysis persons we can finally say that MuFinder exists. The skills needed to create such a monumental task
+                were great, but were worth it.
+              </p>
+            </div>
+          </article>
+        </section>
+        <section id="group-members">
+          <article>
+            <h2>Group members</h2>
+            <hr class="title-split2">
+            <div class="wrapper noflex">
+              <ol class="email-lists">
+                <li>Yan Li Stapleton <a class="email" href="mailto:yanli.stapleton@campbellhigh.net" class="item-drop">
+                    email
+                  </a></li>
+                <li>Girl <a class="email" href="mailto:yanli.stapleton@campbellhigh.net" class="item-drop">
+                    email
+                  </a></li>
+              </ol>
+            </div>
+          </article>
+        </section>
+      </main>
+      <footer>
+        <ol class="footer-flex">
+          <li class="footer-item">Copyright notice</li>
+          <li class="footer-item">Terms of service</li>
+          <li class="footer-item">Privacy policy</li>
+          <li class="footer-item">Owner: Yan Li Stapleton</li>
+        </ol>
+      </footer>
+    </div>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the form and message elements
+      const form = document.getElementById('audioForm');
+      const textarea = document.getElementById('textarea');
+      const errorMessage = document.getElementById('error-message');
+      const successMessage = document.getElementById('success-message');
+    
+      // Add an event listener to the form's submit event
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting the traditional way
+    
+        // Get the value of the textarea
+        const textareaValue = textarea.value.trim();
+    
+        // Clear any previous messages
+        errorMessage.textContent = '';
+        successMessage.textContent = '';
+    
+        // Check if the textarea is empty
+        if (textareaValue === '') {
+          errorMessage.textContent = 'No lyrics found';
+          // Remove the message after 3 seconds
+          setTimeout(() => {
+            errorMessage.textContent = '';
+          }, 3000); // 3000 milliseconds = 3 seconds
+        } else {
+          successMessage.textContent = 'Thank you for trying out this new experimental website, however this feature is still in progress';
+          // Remove the message after 5 seconds
+          setTimeout(() => {
+            successMessage.textContent = '';
+          }, 5000); // 5000 milliseconds = 5 seconds
+        }
+      });
+    });
+    </script>
+    
+    
+</body>
+
+</html>
