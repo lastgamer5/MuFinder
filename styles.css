@@ -106,7 +106,7 @@ nav {
   background-size: cover;
   z-index: 100;
   background-repeat: no-repeat;
-  background-image: url('Photos/DJ\ image.jpg');
+  background-image: url('DJ image.jpg');
   border-bottom: 3px solid rgb(231, 231, 231);
   box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.281);
 }
